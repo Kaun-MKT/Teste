@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Imagem substituindo o título -->
+        <img 
+            src="https://i.ibb.co/D4jzKcg/Capivara-Links-1-removebg-preview-1.png" 
+            alt="Capivara-Links-1-removebg-preview-1" 
+            id="header-logo"
+        >
+
+        <!-- Botões das plataformas -->
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/capivara.links/" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@capivara.links?lang=pt-BR" target="_blank" class="social-btn">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.kwai.com/@Capivara Links" target="_blank" class="social-btn">
+                <i class="fab fa-korvue"></i>
+            </a>
+        </div>
+
+        <!-- Barra de pesquisa -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquise por um produto...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </header>
+    <div class="categories">
+        <div class="filter-container">
+            <button class="filter-btn" data-category="Tudo">
+                <i class="fas fa-bars"></i>
+            </button>
+            <span class="category-label">Tudo</span>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn" data-category="Casa">
+                <i class="fas fa-home"></i>
+            </button>
+            <span class="category-label">Casa</span>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn" data-category="Tech">
+                <i class="fas fa-mobile-alt"></i>
+            </button>
+            <span class="category-label">Tech</span>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn" data-category="Moda">
+                <i class="fas fa-tshirt"></i>
+            </button>
+            <span class="category-label">Moda</span>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product" data-category="Moda">
+            <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rd48-lx42e6ooufd884@resize_w450_nl.webp" alt="Kit 3 Tênis Sapatenis Casual Masculino">
+            <p class="category-tag"> #Moda</p>
+            <div class="product-title">
+                <button class="promo-tag">Promoção</button>
+                <h3>Kit 3 Tênis Sapatenis Casual Masculino</h3>
+            </div>
+            <div class="product-details">
+                <p class="price">R$ 14,90</p>
+                <a href="#" class="view-btn">Ver</a>
+            </div>
+        </div>
+        <div class="product" data-category="Tudo Tech">
+            <img src="https://down-br.img.susercontent.com/file/br-11134201-22120-9efe8f9mh5kv6c@resize_w450_nl.webp" alt="Mini Aspirador de Pó Portátil Sem Fio">
+            <p class="category-tag">#Tech</p>
+            <div class="product-title">
+                <button class="promo-tag">Promoção</button>
+                <h3>Mini Aspirador de Pó Portátil Sem Fio</h3>
+            </div>
+            <div class="product-details">
+                <p class="price">R$ 19,90</p>
+                <a href="#" class="view-btn">Ver</a>
+            </div>
+        </div>
+        <div class="product" data-category="Tudo Tech">
+            <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m1yifuuzh3gxe8@resize_w450_nl.webp" alt="Máquina De Cortar Cabelo Para Barba">
+            <p class="category-tag">#Tech</p>
+            <div class="product-title">
+                <button class="promo-tag">Promoção</button>
+                <h3>Máquina De Cortar Cabelo Para Barba</h3>
+            </div>
+            <div class="product-details">
+                <p class="price">R$ 89,90</p>
+                <a href="#" class="view-btn">Ver</a>
+            </div>
+        </div>
+        <div class="product" data-category="Tudo Casa Moda">
+            <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rcdg-lth1fi9nyzdx72@resize_w450_nl.webp" alt="Lampada Bluetooth De Led Caixa De Som C Controle">
+            <p class="category-tag">#Casa</p>
+            <div class="product-title">
+                <button class="promo-tag">Promoção</button>
+                <h3>Lampada Bluetooth De Led Caixa De</h3>
+            </div>
+            <div class="product-details">
+                <p class="price">R$ 17,90</p>
+                <a href="#" class="view-btn">Ver</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  <button id="theme-toggle">🌙</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
